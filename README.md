@@ -12,18 +12,18 @@
 
 Here's my home assistant implementation. I've got a Supermicro Intel Atom Server running Debian Strech 9.9 and [Home-Assistant](https://home-assistant.io "Home-Assistant") running in a python virtual environment. The additional components run on the server as a service. My network is built on a [pfSense&reg;](https://www.pfsense.org/ "pfSense&reg;") router and [Ubiquiti's UniFi](https://www.ui.com/products/#unifi "Ubiquiti's UniFi") line of networking equipment.
 
-###Subscribe to my youtube channel for videos on my setup:
+### Subscribe to my youtube channel for videos on my setup:
 <a href="https://www.youtube.com/watch?v=pkOwqEQmk5Q&via=tb
 " target="_blank"><img src="https://i.ytimg.com/vi/pkOwqEQmk5Q/maxresdefault.jpg" 
 alt="Network Setup" border="10" /></a>
 
-###Components
+### Components
 * [Home-Assistant](https://home-assistant.io "Home-Assistant") (python virtual environment)
 * [Mosquitto](https://mosquitto.org/ "Mosquitto") MQTT Broker(self hosted)
 * [MariaDB](https://mariadb.org/ "MariaDB") (self hosted)
 * [Snips](https://snips.ai/ "Snips") - for multi-room Audio (pending implementation)
 
-####Other AWESOME configs to check out:
+#### AWESOME configs to check out:
 * [Kevin Eifinger](https://github.com/eifinger/homeassistant-config "Kevin Eifinger")
 * [happyleavesaoc](https://github.com/happyleavesaoc/my-home-automation "happyleavesaoc")
 
