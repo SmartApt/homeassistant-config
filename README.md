@@ -12,6 +12,9 @@
 
 Here's my home assistant implementation. I've got a Supermicro Intel Atom Server running Debian Strech 9.9 and [Home-Assistant](https://home-assistant.io "Home-Assistant") running in a python virtual environment. The additional components run on the server as a service. My network is built on a [pfSense&reg;](https://www.pfsense.org/ "pfSense&reg;") router and [Ubiquiti's UniFi](https://www.ui.com/products/#unifi "Ubiquiti's UniFi") line of networking equipment.
 
+### My Network Configuration
+<a name="networkconfig" href=""><img src="https://github.com/SmartApt/homeassistant-config/blob/master/www/images/networkconfig.png?raw=true" alt="Network Configuration"></a> 
+
 ### Subscribe to my youtube channel for videos on my setup:
 <a href="https://www.youtube.com/watch?v=pkOwqEQmk5Q&via=tb
 " target="_blank"><img src="https://i.ytimg.com/vi/pkOwqEQmk5Q/maxresdefault.jpg" 
