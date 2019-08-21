@@ -1,0 +1,7 @@
+# Weblinks
+
+  entities:
+    - name: Router
+      url: https://192.168.1.1
+    - name: UniFi Controller
+      url: https://192.168.1.1:8443

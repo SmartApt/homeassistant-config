@@ -1,0 +1,33 @@
+#####################################################
+# GIT IGNORE
+#####################################################
+
+# A * ensures that everything will be ignored.
+*
+
+# Whitelisted File Types
+!*.yaml
+!.gitignore
+!*.md
+!*.png
+
+# Whitelisted Folders
+!www
+!www/images
+
+# Ignore folders.
+.storage
+.cloud
+.google.token
+deps/
+
+# Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
+ip_bans.yaml
+secrets.yaml
+entity_registry.yaml
+known_devices.yaml
+docker-compose.yaml
+home-assistant.log
+home-assistant_v2.db
+.HA_VERSION
+.uuid

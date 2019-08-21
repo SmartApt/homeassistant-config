@@ -1,0 +1,106 @@
+#################################################################
+## Home Assistant
+#################################################################
+
+homeassistant:
+  name: Home
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  elevation: !secret homeassistant_elevation
+  unit_system: imperial
+  time_zone: !secret homeassistant_timezone
+  auth_providers:
+   - type: homeassistant
+
+frontend:
+#  themes: !include themes.yaml
+
+updater:
+  reporting: no
+  include_used_components: true
+
+sun:
+
+#map:
+
+config:
+
+logger:
+  default: error
+  logs:
+#    aiounifi: debug
+#    homeassistant.compnents.unifi: debug
+#    homeassistant.components.switch.unifi: debug
+    homeassistant.components.http.ban: warning
+
+logbook:
+
+discovery:
+
+ios:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+history:
+
+wake_on_lan:
+
+#################################################################
+## Components
+#################################################################
+
+mqtt:
+  broker: localhost
+  port: 1883
+  client_id: !secret mqtt_client_id
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  keepalive: 60
+  discovery: true
+  birth_message: 
+    topic: 'hass/status'
+    payload: 'online'
+  will_message:
+    topic: 'hass/status'
+    payload: 'offline'
+
+device_tracker:
+  - platform: unifi
+    host: !secret unifi_controller_host
+    username: !secret unifi_controller_user
+    password: !secret unifi_controller_pass
+    verify_ssl: false
+    ssid_filter:
+      - !secret unifi_controller_ssid1
+      - !secret unifi_controller_ssid2
+    monitored_conditions:
+      - mac
+      - first_seen
+      - hostname
+      - ip
+      - name
+      - radio
+      - uptime
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+recorder:
+  db_url: !secret db_url
+
+system_health:
+
+#################################################################
+## Includes
+#################################################################
+
+automation: !include automations.yaml
+group: !include groups.yaml
+script: !include scripts.yaml
+sensor: !include sensors.yaml
+switch: !include switches.yaml
+weather: !include weather.yaml
+weblink: !include weblinks.yaml
