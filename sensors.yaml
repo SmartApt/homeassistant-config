@@ -1,16 +1,16 @@
 #################################################################
 ## UPS My Choice
 #################################################################
-  - platform: ups
-    username: !secret ups_username
-    password: !secret ups_password
+#  - platform: ups
+#    username: !secret ups_username
+#    password: !secret ups_password
 
 #################################################################
 ## FedEx Delivery Manager
 #################################################################
-  - platform: fedex
-    username: !secret fedex_username
-    password: !secret fedex_password
+#  - platform: fedex
+#    username: !secret fedex_username
+#    password: !secret fedex_password
 
 #################################################################
 ## Duke Energy
