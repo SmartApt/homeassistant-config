@@ -32,6 +32,6 @@ alt="Network Setup" border="10" /></a>
 
 
 
-<a align="center" href="https://raw.githubusercontent.com/SmartApt/homeassistant-config/master/affiliatedisclosure.md">
+<a align="center" href="https://github.com/SmartApt/homeassistant-config/blob/master/affiliatedisclosure.md">
 Affiliate Disclosure
 </a></p>
